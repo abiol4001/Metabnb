@@ -39,16 +39,16 @@ const Inspo = () => {
 
   return (
     <div className='w-full pb-14'>
-      <article className="flex flex-row bg-pink-800 justify-between items-center px-16 py-3 mt-20">
-        <div className="flex items-center justify-center w-32">
+      <article className="flex flex-col md:flex-row bg-pink-800 justify-between items-center px-16 py-3 mt-20">
+        <div className="flex items-center justify-center w-32 my-1">
           <img src="Mbtoken.svg" />
-          <p className="text-white font-bold md:text-4xl">MBToken</p>
+          <p className="text-white font-bold text-3xl md:text-4xl">MBToken</p>
         </div>
-        <div className="flex gap-2">
+        <div className="flex gap-2 my-1">
           <img src="Metamask-icon.svg" alt="" />
           <img className="w-32 md:h-10" src="Metamask.svg" />
         </div>
-        <div className="flex gap-2 items-center">
+        <div className="flex gap-2 items-center my-3">
           <img className="h-10" src="Opensea.svg" />
           <p className="text-white font-bold text-3xl">OpenSea</p>
         </div>

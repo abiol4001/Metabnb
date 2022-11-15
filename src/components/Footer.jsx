@@ -3,7 +3,7 @@ import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="bg-[#1D1D1E] text-white py-10 font-[400]">
+    <div className="bg-[#1D1D1E] text-white py-10 font-[400] px-5">
       <div className="flex flex-col md:flex-row md:justify-around pr-[40px]">
         <div className="mb-9">
           <img src="Footer--logo.svg" alt="Footer Logo" className="mb-10" />

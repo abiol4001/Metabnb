@@ -44,17 +44,17 @@ const Navbar = () => {
           </a>
         </div>
         <ul className="md:flex hidden">
-          {links.map((btnLink, id) => (
+          {links.map((btnLink) => (
             <li
               key={btnLink.id}
               className="px-2 lg:px-4 cursor-pointer hover:scale-105 duration-200 text-[15px] lg:text-[20px]  text-[#434343]"
             >
-                <Link to={btnLink.link}>{btnLink.title}</Link>
+              <Link to={btnLink.link}>{btnLink.title}</Link>
             </li>
           ))}
         </ul>
         <button
-          className="hidden md:block rounded-[10px] bg-gradient-to-r from-[#A02279] to-[#A02279] text-white text-[16px] py-3 px-6 hover:opacity-6 duration-200"
+          className="hidden md:block rounded-[10px] bg-gradient-to-r from-[#A02279] to-[#A02279] text-white text-[16px] py-3 px-3 lg:px-6 hover:opacity-6 duration-200"
           onClick={() => setOpenModal(true)}
         >
           Connect wallet
@@ -70,12 +70,12 @@ const Navbar = () => {
         {nav && (
           <>
             <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-black to-gray-700 text-gray-500 ease-in-out-500 z-10">
-              {links.map((link, id) => (
+              {links.map(btnLink => (
                 <li
-                  key={link.id}
+                  key={btnLink.id}
                   className="px-4 cursor-pointer py-6 text-4xl hover:scale-105 duration-200"
                 >
-                  {link.link}
+                  <Link to={btnLink.link}>{btnLink.title}</Link>
                 </li>
               ))}
               <button

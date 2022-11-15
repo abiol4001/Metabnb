@@ -4,12 +4,12 @@ const Hero = () => {
   return (
     <div className="flex flex-col-reverse lg:flex-row pt-14 justify-between px-14 lg:mt-20">
       <div className="lg:w-[58%] h-full px-5 md:px-10 flex flex-col justify-center place-self-center">
-        <p className="text-[45px] md:text-[56px] text-[#434343] leading-[78px]">
+        <p className="text-[35px] text-center md:text-start md:text-[56px] text-[#434343] leading-[78px]">
           Rent a <span className="text-[#A02279]">Place</span> away from{" "}
           <span className="text-[#A02279]">Home</span> in the{" "}
           <span className="text-[#A02279]">Metaverse</span>
         </p>
-        <p className="text-[24px] my-11">
+        <p className="text-[24px] my-11 text-center md:text-start">
           we provide you access to luxury and affordable houses in the
           metaverse, get a chance to turn your imagination to reality at your
           comfort zone
